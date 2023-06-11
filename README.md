@@ -1,5 +1,5 @@
 # AL-Iklas app
-
+  Al-ikhlas institute is an intuitive to make learn tajweed and quran easy and free 🕋
 # Contrubters
 <img src="https://avatars.githubusercontent.com/u/62839447?v=4" width="50px"> <img src="https://avatars.githubusercontent.com/u/108902855?v=4" width="50px"> <img src="https://avatars.githubusercontent.com/u/108074026?v=4" width="50px">
 
