@@ -1,7 +1,7 @@
 header {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header nav {
@@ -33,7 +33,10 @@ header nav .login:hover {
 
 header .landing {
   flex: 1;
-  background: var(--bg);
+  background: var(--Landingbg);
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header .landing .parent {
@@ -51,10 +54,11 @@ header .landing .parent {
   header nav .links {
     display: none;
   }
-
+/* 
   header .landing .parent {
     flex-direction: column;
-  }
+  } */
+
 }
 
 header .left {
@@ -130,7 +134,6 @@ header .group .btn {
 
 /* sections */
 section {
-  min-height: 100vh;
 }
 
 section:nth-child(odd) {
@@ -152,5 +155,35 @@ section .content .parent {
 
 /* About */
 .about {
-  display: none;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.about .parent{
+  display: flex;
+  height: 100%;
+}
+.about .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+}
+.about .left .quran{
+  max-width: 400px;
+  width: 20vw;
+}
+.about .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding);
+  gap: 20px;
+  width:50%;
+}
+.about .right .btn{
+  width: fit-content;
+}
+
+

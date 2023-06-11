@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --bg: #f5f9fc;
+  --bg: #ffffff;
+  --Landingbg:#f5f9fc;
   --section: #172542;
   --primary: #25a26b;
   --secoundry: #37af58;
@@ -77,3 +78,7 @@ body {
   border: 2px solid #000;
   color: #000;
 }
+
+
+
+
