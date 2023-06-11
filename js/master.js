@@ -16,3 +16,17 @@ submit.onclick = function () {
 };
 
 // https://rive.app/community/4501-9160-mail-send/
+
+
+// loader js
+
+const divs = document.querySelectorAll('.item');
+divs.forEach(div => {
+  const iframe = div.querySelector("iframe");
+  const loader = div.querySelector('.loaderdiv');
+  iframe.addEventListener('load', () => {
+    loader.style="display :none";
+
+    console.log("hello")
+  });
+});

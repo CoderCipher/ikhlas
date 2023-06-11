@@ -1,152 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- css -->
-    <link rel="stylesheet" href="css/framework.css" />
-    <link rel="stylesheet" href="css/master.css" />
-    <!-- title and description -->
-    <title>Al-Ikhlas</title>
-    <!-- fonts -->
-    <script src="https://use.fontawesome.com/2662914969.js"></script>
-    <!-- Open Graph -->
-    <!-- Rive -->
-    <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
-  </head>
-  <body>
-    <!-- =====Header===== -->
-    <header>
-      <div class="parent">
-        <nav>
-          <div class="logo">Al-Ikhlas</div>
-          <div class="links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Courses</a>
-            <a href="#">Contact us</a>
-          </div>
-          <div class="login" onclick="location.href='pages/user.html'">
-            My account | <i class="fa fa-user-circle" aria-hidden="true"></i>
-          </div>
-        </nav>
-      </div>
-      <div class="landing">
-        <div class="parent">
-          <div class="left">
-            <h1>Learn Quran</h1>
-            <div class="des">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              debitis perspiciatis in.
-            </div>
-            <div class="group">
-              <div class="btn btn-green">Courses</div>
-              <div class="btn btn-rounded">Register</div>
-            </div>
-          </div>
-          <div class="right">
-            <img class="quran" src="assets/quran.png" alt="quran" />
-            <img class="mosque" src="assets/mosque.png" alt="mosque" />
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- =====Header===== -->
 
-    <!-- =====About===== -->
-    <section class="about" id="about">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- css -->
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <!-- title and description -->
+  <title>Al-Ikhlas</title>
+  <!-- fonts -->
+  <script src="https://use.fontawesome.com/2662914969.js"></script>
+  <!-- Open Graph -->
+  <!-- Rive -->
+  <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
+</head>
+
+<body>
+  <!-- =====Header===== -->
+  <header>
+    <div class="parent">
+      <nav>
+        <div class="logo">Al-Ikhlas</div>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Courses</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="login" onclick="location.href='pages/user.html'">
+          My account | <i class="fa fa-user-circle" aria-hidden="true"></i>
+        </div>
+      </nav>
+    </div>
+    <div class="landing">
       <div class="parent">
         <div class="left">
-          <img class="quran" src="assets/quran.png" alt="quran" />
-        </div>
-        <div class="right">
-          <h1>About Al-Ikhlas.com</h1>
+          <h1>Learn Quran</h1>
           <div class="des">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            debitis perspiciatis in. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aliquam debitis perspiciatis in.
+            debitis perspiciatis in.
           </div>
-          <div class="btn btn-rounded">Read Our Story</div>
-        </div>
-      </div>
-    </section>
-    <!-- =====About===== -->
-
-    <!-- =====courses===== -->
-    <section class="courses">
-      <div class="parent">
-        <div class="title">Our Courses</div>
-        <div class="bigdiv">
-          <div>
-            <div class="item"></div>
-            <div class="item "></div>
-            <div class="item "></div>
-            <div class="item "></div>
+          <div class="group">
+            <div class="btn btn-green">Courses</div>
+            <div class="btn btn-rounded">Register</div>
           </div>
-          <div>
-            <div class="item "></div>
-            <div class="item "></div>
-            <div class="item "></div>
-          </div>
-          <div>
-            <div class="item "></div>
-            <div class="item "></div>
-          </div>
-          <div>
-            <div class="item "></div>
-            <div class="item "></div>
-            <div class="item "></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- =====courses===== -->
-
-    <!-- =====contact===== -->
-    <section class="contact">
-      <div class="parent">
-        <div class="left">
-          <canvas id="canvas" width="400" height="400"></canvas>
         </div>
         <div class="right">
-          <div class="form">
-            <!-- in back-end convert div to form but did not change the class -->
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              required
-              autocomplete="off"
-            />
-            <input
-              type="mail"
-              name="mail"
-              id="mail"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              name="msg"
-              id="msg"
-              rows="10"
-              required
-              placeholder="Message"
-            ></textarea>
-            <div class="btn btn-blue" id="submit">Send</div>
+          <img class="quran" src="assets/quran.png" alt="quran" />
+          <img class="mosque" src="assets/mosque.png" alt="mosque" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- =====Header===== -->
+
+  <!-- =====About===== -->
+  <section class="about" id="about">
+    <div class="parent">
+      <div class="left">
+        <img class="quran" src="assets/quran.png" alt="quran" />
+      </div>
+      <div class="right">
+        <h1>About Al-Ikhlas.com</h1>
+        <div class="des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          debitis perspiciatis in. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Aliquam debitis perspiciatis in.
+        </div>
+        <div class="btn btn-rounded">Read Our Story</div>
+      </div>
+    </div>
+  </section>
+  <!-- =====About===== -->
+
+  <!-- =====courses===== -->
+  <section class="courses">
+    <div class="parent">
+      <div class="title">Our Courses</div>
+      <div class="bigdiv">
+        <div>
+          <div class="item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CjUtQb4n6ds"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="loaderdiv">
+              <span class="loader"></span>
+            </div>
+          </div>
+          <div class="item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CjUtQb4n6ds"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="loaderdiv">
+              <span class="loader"></span>
+            </div>
+          </div>
+          <div class="item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CjUtQb4n6ds"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="loaderdiv">
+              <span class="loader"></span>
+            </div>
+          </div>
+          <div class="item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CjUtQb4n6ds"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="loaderdiv">
+              <span class="loader"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CjUtQb4n6ds"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="loaderdiv">
+              <span class="loader"></span>
+            </div>
+          </div>
+          <div class="item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CjUtQb4n6ds"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="loaderdiv">
+              <span class="loader"></span>
+            </div>
+          </div>
+          <div class="item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CjUtQb4n6ds"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="loaderdiv">
+              <span class="loader"></span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- =====contact===== -->
+    </div>
+  </section>
+  <!-- =====courses===== -->
 
-    <!-- =====Footer===== -->
-    <footer>
-      All CopyWrite save at Al-Ikhlas &copy; 
-    </footer>
-    <!-- =====Footer===== -->
+  <!-- =====contact===== -->
+  <section class="contact">
+    <div class="parent">
+      <div class="left">
+        <canvas id="canvas" width="400" height="400"></canvas>
+      </div>
+      <div class="right">
+        <div class="form">
+          <!-- in back-end convert div to form but did not change the class -->
+          <input type="text" name="name" id="name" placeholder="Name" required autocomplete="off" />
+          <input type="mail" name="mail" id="mail" placeholder="Email" required />
+          <textarea name="msg" id="msg" rows="10" required placeholder="Message"></textarea>
+          <div class="btn btn-blue" id="submit">Send</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====contact===== -->
 
-    <!-- script -->
-    <script src="js/master.js"></script>
-  </body>
+  <!-- =====Footer===== -->
+  <footer>
+    <div class="parent">
+      <div class="child1">
+        <h2>Al-Ikhlas</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          debitis perspiciatis in.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Aliquam debitis perspiciatis in.
+        </p>
+      </div>
+      <div class="child2">
+
+        <h2>Social Media</h2>
+        <div>
+
+          <a href="#" class="brand">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <h6>Facebook.com/Al-Ikhlas</h6>
+          </a>
+          <a href="#" class="brand">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <h6>Youtube.com/Al-Ikhlas</h6>
+          </a>
+          <a href="#" class="brand">
+            <i class="fa fa-google" aria-hidden="true"></i>
+            <h6>Al-Ikhlas@gmail.com</h6>
+          </a>
+        </div>
+      </div>
+  </footer>
+  <footer>
+  <!-- =====Footer===== -->
+
+  <!-- script -->
+  <script src="js/master.js"></script>
+</body>
+
 </html>
