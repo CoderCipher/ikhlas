@@ -208,6 +208,81 @@ section .content .parent {
 .about .right .btn {
   width: fit-content;
 }
+/* courses */
+  .courses{
+color :#fff;
+
+  }
+  .courses .title{
+    margin: 20px auto;
+    width: fit-content;
+  }
+.courses .parent {
+    min-height: 100vh;
+    padding: 20px 30px;
+}
+.courses .bigdiv{
+  margin-top: 30px;
+  display: grid;
+  grid-auto-columns: auto;
+  
+}
+.courses .bigdiv > div {
+  width:100%;
+  display: grid;
+  margin: 10px 0px;
+  gap: 20px;
+
+}
+.courses .bigdiv > div:nth-child(1){ 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+
+}
+.courses .bigdiv > div:nth-child(2),.courses .bigdiv > div:nth-child(4){ 
+  grid-template-columns: auto auto auto;
+}
+.courses .bigdiv > div:nth-child(3){ 
+  grid-template-columns: auto auto;
+}
+.item{
+  background-color: #666e80;
+  border-radius: 10px;
+  min-height: 150px;
+  transition-duration:0.2s; 
+  box-shadow: 0px 0px 10px 0px #000;
+}
+.item img{
+  width: 100%;
+
+}
+.item:hover{
+  transform: scale(1.1);
+}
+
+
+@media (min-width: 992px) {
+  .courses .bigdiv > div:nth-child(1){ 
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  
+  }
+}
+@media (max-width: 992px) {
+  .courses .bigdiv > div:nth-child(1){ 
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  
+  }
+}
+
+@media (max-width: 400px) {
+  .courses .bigdiv > div{ 
+    grid-template-columns:auto !important
+  
+  }
+}
+
+
+
+/* End courses */
 
 /* contact */
 .contact {
@@ -261,4 +336,12 @@ section .content .parent {
     width: 70vw;
     max-width: 450px;
   }
+}
+
+/* footer */
+footer{
+  background: var(--section);
+  color:#fff;
+  text-align: center;
+  padding: 30px;
 }
