@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --bg: #f5f9fc;
+  --section: #172542;
+  --primary: #25a26b;
+  --secoundry: #37af58;
+  --plant-dark: #1a704b;
+  --danger: #f0534f;
+  --blue: #2073b0;
+  --warning: #f0b11f;
+  --padding: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,4 +55,25 @@ body {
   .parent {
     width: 1370px;
   }
+}
+
+/* btns */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-green {
+  background: linear-gradient(
+    to right bottom,
+    var(--primary),
+    var(--secoundry)
+  );
+  color: white;
+}
+
+.btn-rounded {
+  border: 2px solid #000;
+  color: #000;
 }

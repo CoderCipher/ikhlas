@@ -1,15 +1,156 @@
 header {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+}
+
+header nav {
+  display: flex;
+  padding: var(--padding);
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 10px;
+}
+
+header nav a:hover {
+  color: var(--primary);
+}
+
+header nav .login:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+header .landing {
+  flex: 1;
+  background: var(--bg);
+}
+
+header .landing .parent {
+  /* padding: var(--padding); */
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  header > .parent {
+    justify-content: space-between;
+    width: 100%;
+  }
+  header nav .links {
+    display: none;
+  }
+
+  header .landing .parent {
+    flex-direction: column;
+  }
+}
+
+header .left {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  header .left {
+    width: 100%;
+    flex: 1;
+  }
+}
+
+header .right {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  font-size: 2rem;
+  position: relative;
 }
 
-div {
-  background: linear-gradient(to right, #e91e63, #2196f3, #3f51b5);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+@media (max-width: 768px) {
+  header .right {
+    flex: 1;
+  }
+}
+
+header .landing .quran {
+  max-width: 400px;
+  width: 20vw;
+  position: absolute;
+  z-index: 2;
+  right: 15%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+header .landing .mosque {
+  opacity: 0.03;
+  max-width: 600px;
+  width: 30vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  header .landing .quran {
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header .landing .mosque {
+    width: 80vw;
+  }
+}
+
+header .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding);
+  gap: 20px;
+}
+
+header .group {
+  display: flex;
+}
+
+header .group .btn {
+  margin-right: 20px;
+}
+
+/* sections */
+section {
+  min-height: 100vh;
+}
+
+section:nth-child(odd) {
+  background: var(--section);
+}
+
+/* section .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--primary);
+} */
+
+section .content .parent {
+  padding: var(--padding);
+}
+
+/* About */
+.about {
+  display: none;
 }
