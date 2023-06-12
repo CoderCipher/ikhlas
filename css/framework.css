@@ -59,6 +59,15 @@ body {
   }
 }
 
+/* Group of btn  */
+.group {
+  display: flex;
+}
+
+.group .btn {
+  margin-right: 20px;
+}
+
 /* btns */
 .btn {
   padding: 10px 20px;
@@ -79,11 +88,13 @@ body {
 .btn-blue {
   background: var(--blue);
   color: white;
+  border:none;
 }
 
 .btn-rounded {
   border: 2px solid #000;
   color: #000;
+  
 }
 
 /* inputs */
@@ -108,4 +119,23 @@ textarea:focus {
   outline: none;
   border: 3px solid #2074b0a4;
   margin: 0;
+}
+.titleDiv{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.title{
+  margin-bottom: 50px;
+  position: relative;
+}
+.title::after{
+  content: "--- o ---";
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  scale: 2;
+  font-weight: 100;
+  transform: translate(-25%, -5%);
+  width: max-content;
 }

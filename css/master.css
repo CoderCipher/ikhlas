@@ -123,22 +123,15 @@ header .left {
   gap: 20px;
 }
 
-header .group {
-  display: flex;
-}
 
-header .group .btn {
-  margin-right: 20px;
-}
+
 
 /* sections */
 section {
   min-height: 100vh;
 }
 
-section:nth-child(odd) {
-  background: var(--section);
-}
+
 
 /* section .info {
   display: flex;
@@ -168,7 +161,7 @@ section .content .parent {
 
 @media (max-width: 768px) {
   .about .parent {
-    flex-direction: column; /* moblie responsive */
+    flex-direction: column-reverse; /* moblie responsive */
   }
 }
 
@@ -211,12 +204,9 @@ section .content .parent {
 /* courses */
   .courses{
 color :#fff;
-
+background: var(--section)
   }
-  .courses .title{
-    margin: 20px auto;
-    width: fit-content;
-  }
+   
 .courses .parent {
     min-height: 100vh;
     padding: 20px 30px;
@@ -240,7 +230,7 @@ color :#fff;
 
 }
 .courses .bigdiv > div:nth-child(1){ 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-template-columns: auto auto;
 
 }
 .courses .bigdiv > div:nth-child(2){ 
@@ -250,11 +240,13 @@ color :#fff;
   background-color: #000;
   border-radius: 10px;
   min-height: 150px;
-  transition-duration:0.2s; 
-  box-shadow: 0px 0px 10px 0px #000;
+  box-shadow: 0px 0px 5px #000;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
+/* 
 .loaderdiv{
   width: 100%;
   height: 100%;
@@ -300,7 +292,7 @@ color :#fff;
   height: 32px;
   border-color: #FFF #FFF transparent transparent;
   animation: rotation 1.5s linear infinite;
-}
+} 
     
 @keyframes rotation {
   0% {
@@ -318,24 +310,12 @@ color :#fff;
     transform: rotate(-360deg);
   }
 }
-    
-.item iframe{
+    */
+.item img{
   width: 100%;
 }
 
 
-@media (min-width: 992px) {
-  .courses .bigdiv > div:nth-child(1){ 
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-  
-  }
-}
-@media (max-width: 992px) {
-  .courses .bigdiv > div:nth-child(1){ 
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-  
-  }
-}
 
 @media (max-width: 400px) {
   .courses .bigdiv > div{ 
@@ -347,7 +327,103 @@ color :#fff;
 
 
 /* End courses */
+/* price */
+.price{
+  background-color: var(--Landingbg);
+ 
+}
+.price .parent{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top:30px;
+}
 
+
+ 
+.price .title::after{
+  color:var(--blue);
+}
+.parent .bigCard{
+  display: grid;
+  width: 100%;
+grid-template-columns: repeat(auto-fit,minmax(150px ,1fr));
+row-gap: 20px;
+    column-gap: 74px;
+}
+.parent .group{
+  margin: 20px 0px;
+}
+.parent .card{
+  width:200px;
+  height: 300px;
+  border-top: 4px solid var(--blue);
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card h5{
+  color:var(--blue);
+  margin-top:10px; 
+}
+.card h3{
+  width:110%;
+  transform: translatex(-3%);
+  background-color: var(--blue);
+  padding:10px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 0px 4px #000;
+}
+.card h3::before{
+  content: "";
+  position: absolute;
+  top:100%;
+  left:0px;
+  width:7.5%;
+  height:0;
+  padding-bottom: 7.5%;
+  background-image:linear-gradient(225deg,var(--blue) 50% , transparent 50%);
+  filter: brightness(0.6);
+
+}
+.card  span{
+  font-size: 13px;
+  opacity: 0.7;
+}
+.card hr{
+  margin:10px;
+}
+.card .priceDiv{
+  opacity: 0.7;
+color:var(--blue);
+}
+.card .priceDiv .s2{
+  font-size: 13px;
+}
+.card .btn{
+  width:100%;
+  text-align: center;
+  border: none;
+  border-top: 2px solid var(--blue);
+  color :var(--blue);
+  transition-duration: 0.3s;
+}
+.card .btn:hover{
+  color :#fff;
+  background-color: var(--blue);
+}
+#div60{
+display: none
+
+}
+/* End price  */
 /* contact */
 .contact {
   background: var(--bg);
@@ -429,7 +505,7 @@ footer .child1 p{
 opacity: 0.7;
 margin: 20px 0px;
 }
-.child2 > div{
+.child2 > div , .child1 >div{
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -453,3 +529,8 @@ margin-left: 20px;
 
 }
  
+footer.part2{
+  border-top: 1px dotted #FFF;
+  filter: brightness(0.6);
+  text-align: center;
+}
