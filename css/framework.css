@@ -2,7 +2,7 @@
 
 :root {
   --bg: #ffffff;
-  --Landingbg:#f5f9fc;
+  --Landingbg: #f5f9fc;
   --section: #172542;
   --primary: #25a26b;
   --secoundry: #37af58;
@@ -78,7 +78,3 @@ body {
   border: 2px solid #000;
   color: #000;
 }
-
-
-
-

@@ -1,7 +1,7 @@
 header {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 header nav {
@@ -34,7 +34,7 @@ header nav .login:hover {
 header .landing {
   flex: 1;
   background: var(--Landingbg);
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -54,11 +54,10 @@ header .landing .parent {
   header nav .links {
     display: none;
   }
-/* 
+
   header .landing .parent {
     flex-direction: column;
-  } */
-
+  }
 }
 
 header .left {
@@ -104,7 +103,7 @@ header .landing .mosque {
 
 @media (max-width: 768px) {
   header .landing .quran {
-    width: 60vw;
+    width: 50vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -134,6 +133,7 @@ header .group .btn {
 
 /* sections */
 section {
+  min-height: 100vh;
 }
 
 section:nth-child(odd) {
@@ -160,30 +160,51 @@ section .content .parent {
   align-items: center;
   justify-content: center;
 }
-.about .parent{
+
+.about .parent {
   display: flex;
   height: 100%;
 }
+
+@media (max-width: 768px) {
+  .about .parent {
+    flex-direction: column; /* moblie responsive */
+  }
+}
+
 .about .left {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:50%;
+  width: 50%;
 }
-.about .left .quran{
-  max-width: 400px;
+
+.about .left .quran {
+  max-width: 300px;
   width: 20vw;
 }
-.about .right{
+
+.about .right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: var(--padding);
   gap: 20px;
-  width:50%;
+  width: 50%;
 }
-.about .right .btn{
+
+@media (max-width: 768px) {
+  .about .left,
+  .about .right {
+    width: 80%; /* Better size on moblie */
+    margin: 40px auto; /* seprate two sides */
+  }
+
+  .about .left .quran {
+    width: 50vw; /* Better size on moblie */
+  }
+}
+
+.about .right .btn {
   width: fit-content;
 }
-
-
