@@ -11,6 +11,8 @@
     <!-- fonts -->
     <script src="https://use.fontawesome.com/2662914969.js"></script>
     <!-- Open Graph -->
+    <!-- Rive -->
+    <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
   </head>
   <body>
     <!-- =====Header===== -->
@@ -24,7 +26,7 @@
             <a href="#">Courses</a>
             <a href="#">Contact us</a>
           </div>
-          <div class="login">
+          <div class="login" onclick="location.href='pages/user.html'">
             My account | <i class="fa fa-user-circle" aria-hidden="true"></i>
           </div>
         </nav>
@@ -52,7 +54,7 @@
     <!-- =====Header===== -->
 
     <!-- =====About===== -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="parent">
         <div class="left">
           <img class="quran" src="assets/quran.png" alt="quran" />
@@ -69,6 +71,50 @@
       </div>
     </section>
     <!-- =====About===== -->
+
+    <!-- =====courses===== -->
+    <section class="courses">
+      <div class="parent"></div>
+    </section>
+    <!-- =====courses===== -->
+
+    <!-- =====contact===== -->
+    <section class="contact">
+      <div class="parent">
+        <div class="left">
+          <canvas id="canvas" width="400" height="400"></canvas>
+        </div>
+        <div class="right">
+          <div class="form">
+            <!-- in back-end convert div to form but did not change the class -->
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+              autocomplete="off"
+            />
+            <input
+              type="mail"
+              name="mail"
+              id="mail"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              name="msg"
+              id="msg"
+              rows="10"
+              required
+              placeholder="Message"
+            ></textarea>
+            <div class="btn btn-blue" id="submit">Send</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =====contact===== -->
 
     <!-- =====Footer===== -->
     <footer></footer>

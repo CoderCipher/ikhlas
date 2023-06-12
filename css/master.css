@@ -208,3 +208,57 @@ section .content .parent {
 .about .right .btn {
   width: fit-content;
 }
+
+/* contact */
+.contact {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .parent {
+  display: flex;
+  height: 100%;
+}
+
+@media (max-width: 1100px) {
+  .contact .parent {
+    flex-direction: column; /* moblie responsive */
+    gap: 50px;
+  }
+}
+
+.contact .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .right,
+.contact .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.contact .right .form {
+  width: 450px;
+  background: var(--Landingbg);
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1100px) {
+  canvas {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .contact .right .form {
+    width: 70vw;
+    max-width: 450px;
+  }
+}
