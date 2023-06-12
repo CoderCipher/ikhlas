@@ -1,6 +1,6 @@
 // Contact Rive
 new rive.Rive({
-  src: "/assets/contact.riv",
+  src: "https://raw.githubusercontent.com/CoderCipher/cdn/main/uploads/contact_no_loop.riv",
   canvas: document.getElementById("canvas"),
   autoplay: false,
   stateMachines: "State Machine 1",
@@ -8,7 +8,7 @@ new rive.Rive({
 
 submit.onclick = function () {
   new rive.Rive({
-    src: "/assets/contact_no_loop.riv",
+    src: "https://raw.githubusercontent.com/CoderCipher/cdn/main/uploads/contact_no_loop.riv",
     canvas: document.getElementById("canvas"),
     autoplay: true,
     stateMachines: "State Machine 1",
