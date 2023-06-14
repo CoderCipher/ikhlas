@@ -502,6 +502,7 @@ footer .parent{
   flex-direction: column;
 }
 footer .child1 p{
+  padding-right: 25px;
 opacity: 0.7;
 margin: 20px 0px;
 }
