@@ -59,3 +59,25 @@ btn60.addEventListener('click', () => {
 
   btn60.classList.remove("btn-rounded");
 });
+
+// Get the button element
+const scrollBtn = document.querySelector('#scroll-btn');
+
+// Show the button if the user has scrolled down more than 20% of the page height
+document.addEventListener('scroll', () => {
+  const scrollHeight = window.scrollY;
+  const pageHeight = document.body.scrollHeight - window.innerHeight;
+  if (scrollHeight > pageHeight * 0.2) {
+    scrollBtn.style.display = 'block';
+  } else {
+    scrollBtn.style.display = 'none';
+  }
+});
+
+// Scroll the page to the top when the button is clicked
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});

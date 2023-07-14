@@ -1,14 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg);
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--blue2);
+}
+::selection {
+  background-color: var(--primary);
+  color: white;
+}
+
+
 :root {
   --bg: #ffffff;
   --Landingbg: #f5f9fc;
   --section: #172542;
-  --primary: #25a26b;
-  --secoundry: #37af58;
+  /* --primary: #25a26b;
+  --secoundry: #37af58; */
+  --primary: #2073b0;
+  --secoundry: #16405f;
+  
   --plant-dark: #1a704b;
   --danger: #f0534f;
   --blue: #2073b0;
+  --blue2:#16405f;
   --warning: #f0b11f;
   --padding: 20px;
   --transition: 0.25s;
@@ -27,6 +52,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 /* container */
@@ -86,7 +112,10 @@ body {
 }
 
 .btn-blue {
-  background: var(--blue);
+  background: linear-gradient(
+    to right bottom,
+    var(--blue),
+    var(--blue2));
   color: white;
   border:none;
 }
