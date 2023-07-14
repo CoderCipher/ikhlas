@@ -322,8 +322,15 @@ background: var(--section)
     transform: rotate(-360deg);
   }
 }
+
+
     */
-.item img{
+
+
+.courses .title{
+  border-color:white;
+}
+    .item img{
   width: 100%;
 }
 
@@ -350,20 +357,25 @@ background: var(--section)
   justify-content: space-evenly;
   flex-direction: column;
   min-height: 100vh;
-  padding-top:30px;
+  padding:30px;
 }
 
 
- 
-.price .title::after{
-  color:var(--blue);
-}
+
 .parent .bigCard{
   display: grid;
   width: 90%;
 grid-template-columns: repeat(auto-fit,minmax(150px ,1fr));
 row-gap: 20px;
     column-gap: 74px;
+}
+@media (max-width: 500px) {
+  .parent .bigCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
 }
 .parent .group{
   margin: 20px 0px;
@@ -430,10 +442,6 @@ color:var(--blue);
 .card .btn:hover{
   color :#fff;
   background-color: var(--blue);
-}
-#div60{
-display: none
-
 }
 /* End price  */
 /* contact */

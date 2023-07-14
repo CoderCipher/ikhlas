@@ -43,7 +43,7 @@ btn30.addEventListener('click', () => {
   div60.style = "display :none";
   btn60.classList.remove("btn-blue");
   btn60.classList.add("btn-rounded");
-  div30.style = "display:grid";
+  div30.style = "";
   btn30.classList.add("btn-blue");
   btn30.classList.remove("btn-rounded");
 });
@@ -54,7 +54,7 @@ btn60.addEventListener('click', () => {
   btn30.classList.remove("btn-blue");
 
   btn30.classList.add("btn-rounded");
-  div60.style = "display:grid";
+  div60.style = "";
   btn60.classList.add("btn-blue");
 
   btn60.classList.remove("btn-rounded");

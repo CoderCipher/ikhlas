@@ -5,12 +5,13 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--bg);
+  background-color: var(--bg)
  
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--blue);
+  border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:active {
   background-color: var(--blue2);
@@ -25,8 +26,10 @@
   --bg: #ffffff;
   --Landingbg: #f5f9fc;
   --section: #172542;
+
   /* --primary: #25a26b;
   --secoundry: #37af58; */
+  
   --primary: #2073b0;
   --secoundry: #16405f;
   
@@ -157,14 +160,6 @@ textarea:focus {
 .title{
   margin-bottom: 50px;
   position: relative;
-}
-.title::after{
-  content: "--- o ---";
-  left: 50%;
-  position: absolute;
-  top: 100%;
-  scale: 2;
-  font-weight: 100;
-  transform: translate(-25%, -5%);
-  width: max-content;
+  border-bottom: 2px dotted var(--primary);
+  padding-bottom:5px; 
 }
